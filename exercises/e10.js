@@ -6,7 +6,7 @@
 export function getClientsWithLetterInName(array, letter) {
   // Your code goes here...
   var accounts = [];
-  for (i == 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     var names = array[i].name;
     if (names.toLowerCase().include(letter.toLowerCase())) {
       accounts.push(array.name);

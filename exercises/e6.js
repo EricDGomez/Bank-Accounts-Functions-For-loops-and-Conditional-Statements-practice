@@ -6,7 +6,7 @@
 export function getClientWithNoMoney(array) {
   // Your code goes here...
   var bankAccountsHolder = [];
-  for (i == 0; i < bankAccountsHolder.length; i++) {
+  for (let i = 0; i < bankAccountsHolder.length; i++) {
     if (array[i].balance == 0) {
       bankAccountsHolder.push(array[i].name);
     }
