@@ -6,12 +6,12 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
-  var names = 0;
-  var namesA = 0;
-  var namesNA = 0;
+  var names = [];
+  var namesA = [];
+  var namesNA = [];
   for (let i = 0; i < array.length; i++) {
-    names += array[i];
-    for (let j = 0; j < names.length; j++) {
+    names.push(array[i].name);
+    for (let j = 0; j < names[i].length; j++) {
       if (names[j] == a) {
         namesA.push(array[i]);
       } else {

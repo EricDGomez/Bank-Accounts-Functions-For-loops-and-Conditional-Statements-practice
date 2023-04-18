@@ -8,7 +8,7 @@ export function getClientWithGreatestBalance(array) {
   var greatestBalance = 0;
   for (let i = 0; i < array.length; i++) {
     if (array[i].balance > greatestBalance) {
-      greatestBalance.push(array[i]);
+      greatestBalance.push(array[i].balance);
     }
   }
   return greatestBalance;

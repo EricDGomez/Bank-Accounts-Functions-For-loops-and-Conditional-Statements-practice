@@ -7,8 +7,8 @@ export function getFirstTenNumbers() {
   let numbers = [];
   for (let i = 1; i <= 10; i++) {
     numbers.push(i);
-    return numbers;
   }
+  return numbers;
 }
 
 // === TEST YOURSELF ===

@@ -8,7 +8,7 @@ export function getClientsWithBalanceOverOneHundred(array) {
   var notBrokeYet = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i].balance > 100) {
-      notBrokeYet.push(array[i].balance);
+      notBrokeYet.push(array[i]);
     }
   }
   return notBrokeYet;

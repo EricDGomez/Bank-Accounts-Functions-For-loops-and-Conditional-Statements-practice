@@ -9,10 +9,9 @@ export function doesArrayInclude(array, value) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] == value) {
       return true;
-    } else {
-      return false;
     }
   }
+  return false;
 }
 
 // === TEST YOURSELF ===

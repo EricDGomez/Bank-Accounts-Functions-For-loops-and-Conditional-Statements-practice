@@ -6,12 +6,11 @@
 
 export function getClientsWithWrongBalance(array) {
   // Your code goes here...
-  var accounts = [];
+  let accounts = [];
   for (let i = 0; i < array.length; i++) {
-    var acc = array[i];
-    var sumDep = 0;
-    var sumWith = 0;
-    // var balance = 0;
+    const acc = array[i];
+    let sumDep = 0;
+    let sumWith = 0;
     if (acc.deposits) {
       for (let j = 0; j < acc.deposits.length; j++) {
         sumDep += acc.deposits[j];
@@ -22,13 +21,7 @@ export function getClientsWithWrongBalance(array) {
         sumWith += acc.withdrawals[k];
       }
     }
-    // if (acc.balance > 0) {
-    //   for (let l = 0; l < acc.balance.length; l++) {
-    //     balance = acc.balance[l];
-    //   }
-    // }
-    let balance = sumWith - sumDep;
-    if (balance !== acc.balance) {
+    if (acc.balance !== sumDep - sumWith) {
       accounts.push(acc);
     }
   }

@@ -6,10 +6,11 @@
 
 export function joinToString(array, separator) {
   // Your code goes here...
-  var result = 0;
+  let result = 0;
   for (let i = 0; i < array.length; i++) {
     result += array[i] + separator;
   }
+  return result;
 }
 
 // === TEST YOURSELF ===
