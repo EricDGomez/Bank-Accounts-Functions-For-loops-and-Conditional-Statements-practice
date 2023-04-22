@@ -9,7 +9,7 @@ export function getClientsWithLetterInName(array, letter) {
   for (let i = 0; i < array.length; i++) {
     var name = array[i].name;
     for (let x of name) {
-      if (x == letter) {
+      if (x.toLowerCase() == letter.toLowerCase()) {
         accounts.push(array[i].name);
       }
     }

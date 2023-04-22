@@ -5,10 +5,10 @@
 
 export function getClientWithGreatestBalance(array) {
   // Your code goes here...
-  var greatestBalance = 0;
+  var greatestBalance = null;
   for (let i = 0; i < array.length; i++) {
-    if (array[i].balance > greatestBalance) {
-      greatestBalance.push(array[i].balance);
+    if (array[i].balance >= greatestBalance) {
+      greatestBalance.push(array[i]);
     }
   }
   return greatestBalance;

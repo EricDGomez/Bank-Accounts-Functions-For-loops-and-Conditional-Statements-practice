@@ -6,7 +6,7 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
-  var names = [];
+  var names = null;
   var namesA = [];
   var namesNA = [];
   for (let i = 0; i < array.length; i++) {
@@ -19,7 +19,7 @@ export function separateNamesWithAFromRest(array) {
       }
     }
   }
-  return namesA, namesNA;
+  return [namesA, namesNA];
 }
 
 // === TEST YOURSELF ===
