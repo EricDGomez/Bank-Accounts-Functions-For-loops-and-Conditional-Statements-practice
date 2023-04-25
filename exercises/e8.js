@@ -5,13 +5,19 @@
 
 export function getClientWithGreatestBalance(array) {
   // Your code goes here...
-  var greatestBalance = null;
+  let maxBalance = null;
+  let accountWithMaxBalance;
+
   for (let i = 0; i < array.length; i++) {
-    if (array[i].balance >= greatestBalance) {
-      greatestBalance.push(array[i]);
+    const account = array[i];
+
+    if (account.balance > maxBalance) {
+      maxBalance = account.balance;
+      accountWithMaxBalance = account;
     }
   }
-  return greatestBalance;
+
+  return accountWithMaxBalance;
 }
 
 // === TEST YOURSELF ===

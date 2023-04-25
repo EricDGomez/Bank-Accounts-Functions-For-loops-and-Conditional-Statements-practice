@@ -6,20 +6,27 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
-  var names = null;
-  var namesA = [];
-  var namesNA = [];
+  var arr1 = [];
+  var arr2 = [];
   for (let i = 0; i < array.length; i++) {
-    names.push(array[i].name);
-    for (let j = 0; j < names[i].length; j++) {
-      if (names[j] == a) {
-        namesA.push(array[i]);
+    let name = array[i];
+    let letter = "a";
+    let hasLetter = false;
+    for (let j = 0; j < name[j].length; j++) {
+      if (name.charAt == letter) {
+        hasLetter = true;
+        break;
       } else {
         namesNA.push(array[i]);
       }
     }
+    if (hasLetter) {
+      arr1.push(array[i]);
+    } else {
+      arr2.push(array[i]);
+    }
   }
-  return [namesA, namesNA];
+  return [arr1, arr2];
 }
 
 // === TEST YOURSELF ===

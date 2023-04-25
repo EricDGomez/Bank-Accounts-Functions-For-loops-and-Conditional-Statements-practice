@@ -6,9 +6,13 @@
 
 export function flatArrays(array1) {
   // Your code goes here...
-  var array3 = [];
+  let array2 = [];
+  let array3 = [];
   for (let i = 0; i < array1.length; i++) {
-    array3.push(array1[i]);
+    array2 = array1[i];
+    for (let j = 0; j < array2.length; j++) {
+      array3.push(array2[j]);
+    }
   }
   return array3;
 }
