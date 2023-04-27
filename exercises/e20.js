@@ -13,11 +13,9 @@ export function separateNamesWithAFromRest(array) {
     let letter = "a";
     let hasLetter = false;
     for (let j = 0; j < name[j].length; j++) {
-      if (name.charAt == letter) {
+      if (name.charAt[j] === letter) {
         hasLetter = true;
         break;
-      } else {
-        namesNA.push(array[i]);
       }
     }
     if (hasLetter) {

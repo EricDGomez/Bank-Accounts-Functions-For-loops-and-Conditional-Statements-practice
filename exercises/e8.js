@@ -5,8 +5,8 @@
 
 export function getClientWithGreatestBalance(array) {
   // Your code goes here...
-  let maxBalance = null;
-  let accountWithMaxBalance;
+  let maxBalance = 0;
+  let accountWithMaxBalance = null;
 
   for (let i = 0; i < array.length; i++) {
     const account = array[i];
@@ -17,7 +17,7 @@ export function getClientWithGreatestBalance(array) {
     }
   }
 
-  return accountWithMaxBalance;
+  return [accountWithMaxBalance];
 }
 
 // === TEST YOURSELF ===
