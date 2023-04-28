@@ -12,16 +12,16 @@ export function separateNamesWithAFromRest(array) {
     let name = array[i];
     let letter = "a";
     let hasLetter = false;
-    for (let j = 0; j < name[j].length; j++) {
-      if (name.charAt[j] === letter) {
+    for (let j = 0; j < name.length; j++) {
+      if (name.charAt(j) === letter) {
         hasLetter = true;
         break;
       }
     }
     if (hasLetter) {
-      arr1.push(array[i]);
+      arr1.push(name);
     } else {
-      arr2.push(array[i]);
+      arr2.push(name);
     }
   }
   return [arr1, arr2];
